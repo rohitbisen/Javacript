@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love-meter</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(245, 173, 185);
+    }
+    .main{
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    input{
+        margin: 5px;
+        display: block;
+        text-align: justify;
+    }
+    /* input:nth-child(2){
+        /* margin: 5px;
+    } */
+</style>
+
+
+<body>
+    <div class="main">
+
+        <input type="input" id="you" placeholder="Enter your name" required>
+        <input type="input" id="your-lover" placeholder="Enter your lover's name" required>
+        <input type="submit" onclick="love()" value="Submit">
+
+        <p id="lpp" style="margin: 5px;">Here are your love percentage: </p>
+        <p id="lp" style="margin: 5px;"></p>
+        
+    </div>
+</body>
+<script>
+    function love(){
+        // console.log("bhgg bsdk");
+        const max = 100
+        const min = 10
+        const lovePercentage = Math.round((Math.random()*(max-min))+10)
+        document.getElementById('lp').innerText = lovePercentage + '%'
+        
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(79, 61, 61);
+}
+h1{
+    display: block;
+    text-align: center;
+    color: aquamarine;
+}
+form{
+    display: block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/* #btn{
+    margin: 15px;
+    padding: 2px;
+} */
+button{
+    margin: 10px;
+}
+
+button:hover {
+    border: 2px solid rgb(77, 93, 74);
+    border-radius: 10px;
+    background-color: rgb(163, 202, 195) ; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 2px 5px 2px rgb(144, 137, 137) inset;
+    cursor: pointer;
+    text-decoration-line: unset;
+}

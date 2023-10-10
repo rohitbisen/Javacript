@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(98, 73, 73);
+    font-size: large;
+}
+.wrapper{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-direction: column;
+    color: antiquewhite;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    background-size: contain;
+    background-color: rgb(106, 126, 119);
+    border-radius: 100px;
+    color: antiquewhite;
+}
+#guess{
+    margin: 10px;
+}
+
+#guessField{
+    margin: 10px;
+    padding: 4px;
+}
+
+#subt{
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+input[type = submit]:hover{
+    box-shadow: 14px 3px 40px rgb(205, 54, 54) inset;
+    overflow: none;
+    font-variant: small-caps;
+    font-weight:bolder;
+    /* font-synthesis-small-caps:unset ; */
+}
+input[type = submit]:-moz-loading{
+    animation: alternate-reverse;
+}
+
